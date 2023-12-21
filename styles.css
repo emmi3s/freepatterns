@@ -1,0 +1,114 @@
+/*koko sivua koskevat määritykset */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+
+
+/*sivun rungon määritykset*/
+body{
+    background-color: darkseagreen;
+}
+
+
+/*sivun rungon määritykset*/
+.site{
+    max-width: 88%;
+    margin: 3% auto auto auto;
+    height: auto;
+    background-color: #FAF7F0;
+    padding: 3%;
+}
+
+/*top menu*/
+header {
+  display: flex;
+}
+
+/*top menun contact us lista*/
+.header-top_menu-menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+
+/*top menun contact us linkki*/
+#header-top_menu-menu-click {
+  display: block;
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 2em;
+    font-weight: bold;
+}
+
+/*sivun nimi ja prosentit millä leveydellä otsikko näkyy*/
+#header-site_name {
+    width: 85%;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+/*prosentit millä leveydellä contact us linnki näkyy*/
+.header-top_menu {
+  width: 15%;
+}
+
+/*pääsisältö*/
+main {
+    margin-top: 3%;
+     font-size: 2em;
+}
+
+
+
+/* video kansio ompelu, kohta 10:13 */
+
+
+
+
+
+/* tyylimäärittelyt erikokoisille näytöille*/
+
+/* keskikokoinen näyttö
+@media only screen and (max-width: 1337px) {
+    /*logo pienemmäksi
+   #header-site_name {
+        font-size: 1.3em;
+    }
+    /*contact us pienemmäksi
+   #header-top_menu-menu-click {
+        font-weight: bold;
+        font-size: 1em;
+        }
+}
+/*
+
+/*
+/* mobiili
+@media only screen and (max-width: 600px) {
+   #header-site_name {
+        font-size: 1.5em;
+    }
+    /*contact us pienemmäksi
+   #header-top_menu-menu-click {
+        font-weight: bold;
+        font-size: 1em;
+        }
+}
+/*
+
+ */
+/*minilaite
+@media only screen and (max-width: 319px) {
+    KORJAA asettelua
+    .header{
+        display: block;
+    }
+/*
