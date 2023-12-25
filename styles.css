@@ -13,7 +13,7 @@
 
 /*sivun rungon määritykset*/
 body{
-    background-color: darkseagreen;
+    background-color: #CFDCF2;
 }
 
 
@@ -51,7 +51,7 @@ header {
 /*sivun nimi ja prosentit millä leveydellä otsikko näkyy*/
 #header-site_name {
     width: 85%;
-    font-size: 3.5em;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -66,7 +66,39 @@ main {
      font-size: 2em;
 }
 
+/*etuotsikko, tekstisisältö ja kuva*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
+/*etusivun kuva*/
+#container-image{
+    max-width: 70%;
+}
+
+/*etusivun otsikko & teksti*/
+.container-text{
+    max-width: 30%;
+    align-self: flex-start;
+    margin-top: 5%;
+}
+
+/*etusivun teksti*/
+#container-p{
+    margin-top: 8%;
+}
+
+
+
+/*alavalikko*/
+footer{
+    font-size: 2em;
+    margin-top: 1%;
+    border-top: 1px solid black;
+    padding-top: 1%;
+}
 
 /* video kansio ompelu, kohta 10:13 */
 
