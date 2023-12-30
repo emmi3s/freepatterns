@@ -23,7 +23,7 @@ function imagesToPage(images) {
         const imageElement = document.createElement('img');
         imageElement.src = imagePath;
         imageElement.alt = 'picture of item';
-        imageElement.loading = 'lazy';
+        //imageElement.loading = 'lazy';
 
         const item = document.createElement('div');
         item.classList.add('item'); //antaa elementille luokan. lisäisikö saman kun olemassa oleville kuville niin saa tyylimäärittelyt?
@@ -36,9 +36,41 @@ function imagesToPage(images) {
 
 
 
-// kuvamäärän muuttujat
-let start = 0;
-const batch = 4;
+// näytettävien kuvien määrä sivulla
+const imagesPerPage = 12;
+let currentPage = 1;
+
+// sivumäärä (napit) kuvamäärän perusteella
+const totalImages = 26; //tähän myöhemmin esim lista ja lengt, jolloin saa rajausominaisuuksien perusteella tarvittavan sivumäärän
+const totalPages = Math.ceil(totalImages / imagesPerPage);
+
+// luodaan sivunumerot
+const pageNumbersArea = document.querySelector('.page-number');
+
+for (let i = 1; i <= totalPages; i++) {
+    const pageBtn = document.createElement('button');
+    pageBtn.textContent = i;
+    pageBtn.onclick = function () {
+        nextPage(i);
+    };
+    pageNumbersArea.appendChild(pageBtn);
+}
+
+
+// tekee siirtymän toiselle sivulle
+function nextPage(pageNumber) {
+    const start = (pageNumber -1) * imagesPerPage;
+    const images = fetchImages(start, imagesPerPage);
+
+    //poistaa aikaisemmat kuvat
+    if (document.querySelector('.gallery').children.length > 0) {
+        document.querySelector('.gallery').innerHTML = '';
+    }
+
+    imagesToPage(images);
+}
+
+
 
 
 
@@ -46,12 +78,12 @@ const batch = 4;
 // seuraa käyttäjän siirtymistä alaspäin sivulla
 window.addEventListener('scroll', () => {
     const {scrollTop, scrollHeight, clientHeight} = document.documentElement;
-    if (clientHeight + scrollTop >= scrollHeight -100) {
-        const images = fetchImages(start, batch); //kutsuu fetchImages funktiota
-        start += batch;
+    if (clientHeight + scrollTop >= scrollHeight - 600 && currentPage <= totalPages) {
 
-        //kuvien lisääminen sivustolle funktion kutsuminen
-        imagesToPage(images);
+        if (currentPage <= totalPages) {
+            nextPage(currentPage);
+            currentPage++;
+        }
     }
 });
 
