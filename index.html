@@ -43,10 +43,65 @@
 
 
     <main>
-    <p>uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
-    uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
-    uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu
-    uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu</p>
+    <div class="container">
+        <div class="container-text">
+            <h1>Free Patterns Search</h1>
+            <p id="container-p">Collection of free knitting and sewing patterns to help you find your next project.</p>
+        </div>
+
+        <img id="container-image" src="https://placehold.co/1200x800">
+    </div>
+
+    <h2 id="gallery-header">Find a pattern</h2>
+
+
+    <div class="gallery-container">
+        <div class="filter">
+        <h3>Filter</h3>
+
+            <div class="gallery-container-filter">
+                <div id="gallery-container-filter-pattern_type">
+                 <label for="pattern-type">Pattern type:</label>
+                <select id="pattern-type">
+                    <option value="knitting">Knitting</option>
+                    <option value="sewing">Sewing</option>
+                </select>
+                </div>
+
+
+                <div class="gallery-container-filter">
+                 <label for="gender">Gender:</label>
+                <select id="gender">
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="kids">Kids</option>
+                </select>
+                </div>
+
+                <div class="gallery-container-filter">
+                 <label for="group">Group:</label>
+                    <select id="group">
+                        <option value="shirt">Shirts</option>
+                        <option value="skirt">Skirts</option>
+                        <option value="dress">Dresses</option>
+                        <option value="pants">Pants</option>
+                        <option value="accessories">Asseccories</option>
+                        <option value="jacket">Jackets</option>
+                    </select>
+                </div>
+
+            </div>
+    </div>
+
+
+
+    <div class="gallery"></div>
+    </div>
+
+        <div class="page-number-container">
+            <div class="page-number"></div>
+        </div>
+
     </main>
 
     <footer>
@@ -54,6 +109,8 @@
     </footer>
 
 </div>
+
+<script src="js.js"></script>
 </body>
 </html>
 
