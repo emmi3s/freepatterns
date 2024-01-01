@@ -13,7 +13,7 @@
 
 /*sivun rungon määritykset*/
 body{
-    background-color: darkseagreen;
+    background-color: #CFDCF2;
 }
 
 
@@ -51,7 +51,7 @@ header {
 /*sivun nimi ja prosentit millä leveydellä otsikko näkyy*/
 #header-site_name {
     width: 85%;
-    font-size: 3.5em;
+    font-size: 2em;
     font-weight: bold;
 }
 
@@ -66,7 +66,129 @@ main {
      font-size: 2em;
 }
 
+/*etuotsikko, tekstisisältö ja kuva*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
+/*etusivun kuva*/
+#container-image{
+    max-width: 60%;
+}
+
+/*etusivun otsikko & teksti*/
+.container-text{
+    max-width: 40%;
+    align-self: flex-start;
+    margin-top: 5%;
+}
+
+/*etusivun teksti*/
+#container-p{
+    margin-top: 8%;
+}
+
+
+#gallery-header{
+    margin-top: 6%;
+    margin-left: 45%;
+    margin-bottom: 3%;
+}
+
+
+
+/*filtervalikko*/
+select{
+    height: 50px;
+    width: 200px;
+    font-size: 1em;
+    border-radius: 6px;
+}
+
+.gallery-container-filter{
+    margin-top: 4%;
+}
+
+.gallery-container-filter{
+    margin-top: 3%;
+}
+/*filtervalikko*/
+
+
+
+
+/*kuvagalleria*/
+.gallery-container {
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.filter {
+    width: 20%;
+    padding: 20px;
+    position: sticky;
+}
+
+.gallery {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.item {
+    width: 25%;
+    margin-bottom: 3%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.gallery-item-header-text {
+    font-size: 1.3em;
+    color: #333;
+    margin-top: 2%;
+}
+
+.gallery-item-header {
+    font-size: 1.3em;
+    margin-bottom: 0;
+    font-weight: normal;
+
+}
+/*kuvagalleria*/
+
+
+
+/*sivunumerot*/
+.page-number button {
+    border-radius: 7px;
+    height: 50px;
+    width: 100px;
+    font-size: 1em;
+    margin-left: 0.3%;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+
+
+
+/*alavalikko*/
+footer{
+    font-size: 2em;
+    margin-top: 1%;
+    border-top: 1px solid black;
+    padding-top: 1%;
+}
 
 /* video kansio ompelu, kohta 10:13 */
 
