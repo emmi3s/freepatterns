@@ -50,32 +50,27 @@ groupSelect.addEventListener('change', (event) => {
 
 
 
-// hakee kuvien polut
-async function fetchImages() {
 
+
+async function fetchImages(start, batch) {
     let imagePaths = [];
 
-    fetch('patternsInfo.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-      return response.json();
-    })
-    .then(jsonData => {
-      // Extract image paths
-      imagePaths = jsonData.map(entry => entry.image_path);
-      console.log('List of image paths:', imagePaths);
-      //return imagePaths;
-      imagesToPage(imagePaths);
-      // Print the list of image paths
-
-    })
-    .catch(error => {
-      console.error('Error fetching or parsing JSON:', error);
-    });
-
+    for (let i = start + 1; i <= start + batch; i++) {
+        const imagePath = `items_directory/item${i}.jpg`;
+        try {
+            const response = await fetch(imagePath, { method: 'HEAD' });
+            
+            if (response.ok) {
+                imagePaths.push(imagePath);
+            } else {
+                return imagePaths;
+            }
+        } catch (error) {
+            console.error(`Error fetching image ${i}:`, error);
+        }
+    }
     console.log(imagePaths)
+    return imagePaths;
 }
 
 
@@ -103,10 +98,45 @@ function imagesToPage(images) {
 }
 
 
-// tekee siirtymän toiselle sivulle
-async function nextPage() {
-    const images = await fetchImages();
+
+// näytettävien kuvien määrä sivulla
+const imagesPerPage = 20;
+let currentPage = 1;
+
+
+
+// sivumäärä (napit) kuvamäärän perusteella
+const totalImages = 26; //tähän myöhemmin esim lista ja lengt, jolloin saa rajausominaisuuksien perusteella tarvittavan sivumäärän
+const totalPages = Math.ceil(totalImages / imagesPerPage);
+
+
+
+
+// luodaan sivunumerot
+const pageNumbersArea = document.querySelector('.page-number');
+
+for (let i = 1; i <= totalPages; i++) {
+    const pageBtn = document.createElement('button');
+    pageBtn.textContent = i;
+    pageBtn.onclick = function () {
+        nextPage(i);
+    };
+    pageNumbersArea.appendChild(pageBtn);
 }
 
-nextPage();
+
+// tekee siirtymän toiselle sivulle
+async function nextPage(pageNumber) {
+    const start = (pageNumber -1) * imagesPerPage;
+    const images = await fetchImages(start, imagesPerPage);
+
+    //poistaa aikaisemmat kuvat
+    if (document.querySelector('.gallery').children.length > 0) {
+        document.querySelector('.gallery').innerHTML = '';
+    }
+
+    imagesToPage(images);
+}
+
+nextPage(currentPage);
 

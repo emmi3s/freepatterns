@@ -1,0 +1,136 @@
+/*koko sivua koskevat määritykset */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Merriweather', serif;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    color: black;
+
+}
+
+
+/*sivun rungon määritykset*/
+body{
+    background-color: #CFDCF2;
+}
+
+
+/*sivun rungon määritykset*/
+.site{
+    max-width: 88%;
+    margin: 3% auto auto auto;
+    height: auto;
+    background-color: #FAF7F0;
+    padding: 3%;
+}
+
+/*top menu*/
+header {
+  display: flex;
+}
+
+/*top menun contact us lista*/
+.header-top_menu-menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+}
+
+
+/*top menun contact us linkki*/
+#header-top_menu-menu-click {
+  display: block;
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 2em;
+    font-weight: bold;
+}
+
+/*sivun nimi ja prosentit millä leveydellä otsikko näkyy*/
+#header-site_name {
+    width: 85%;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/*prosentit millä leveydellä contact us linnki näkyy*/
+.header-top_menu {
+  width: 15%;
+}
+
+/*pääsisältö*/
+main {
+    margin-top: 3%;
+     font-size: 1em;
+}
+
+/*etuotsikko, tekstisisältö ja kuva*/
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+/*etusivun kuva*/
+#container-image{
+    max-width: 100%;
+    height: auto;
+}
+
+/*etusivun otsikko & teksti*/
+.container-text{
+    align-self: flex-start;
+    margin-top: 5%;
+}
+
+/*etusivun teksti*/
+#container-p{
+    margin-top: 8%;
+}
+
+
+#gallery-header{
+    margin-top: 6%;
+    margin-left: 45%;
+    margin-bottom: 3%;
+}
+
+
+
+
+
+/* Example CSS for dots */
+.dots-container {
+  margin-top: 10px; /* Adjust spacing between image and dots */
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: gray;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: black;
+}
+
+
+
+
+
+
+/*alavalikko*/
+footer{
+    font-size: 2em;
+    margin-top: 1%;
+    border-top: 1px solid black;
+    padding-top: 1%;
+}
+
