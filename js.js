@@ -1,7 +1,10 @@
 'use strict';
 
-//Filter-valikko
 
+//Globaalit muuttujat
+let patternData = '';
+
+//Filter-valikko
 let patternSelected = '';
 let genderSelected = '';
 let groupSelected = '';
@@ -18,7 +21,7 @@ const groupSelect = document.getElementById('group');
 
 patternTypeSelect.addEventListener('change', (event) => {
     patternSelected = event.target.value;
-  /*  fetchImages(patternSelected, genderSelected, groupSelected) */
+  imagesToPage()
 });
 
 
@@ -37,17 +40,14 @@ genderSelect.addEventListener('change', (event) => {
         skirtsOption.style.display = 'block';
     }
 
-  /*  fetchImages(patternSelected, genderSelected, groupSelected) */
+   imagesToPage()
 });
-
 
 
 groupSelect.addEventListener('change', (event) => {
     groupSelected = event.target.value;
-   /* fetchImages(patternSelected, genderSelected, groupSelected) */
+   imagesToPage()
 });
-
-
 
 
 // hakee kuvien polut
@@ -63,13 +63,8 @@ async function fetchImages() {
       return response.json();
     })
     .then(jsonData => {
-      // Extract image paths
-      imagePaths = jsonData.map(entry => entry.image_path);
-      console.log('List of image paths:', imagePaths);
-      //return imagePaths;
-      imagesToPage(imagePaths);
-      // Print the list of image paths
-
+      patternData = jsonData;
+      imagesToPage();
     })
     .catch(error => {
       console.error('Error fetching or parsing JSON:', error);
@@ -80,10 +75,31 @@ async function fetchImages() {
 
 
 //lisää kuvat sivulle
-function imagesToPage(images) {
-    const gallery = document.querySelector('.gallery');
+function imagesToPage() {
+    let types = patternData.map(entry => entry.patternType);
+    let genders = patternData.map(entry => entry.gender);
+    let garmets = patternData.map(entry => entry.garmet);
+    let ids = patternData.map(entry => entry.idnum);
 
-    images.forEach(imagePath => {
+    console.log(ids)
+
+    ids = ids.filter((id, index) => (genderSelected === "" || genders[index] === genderSelected) && (patternSelected === "" || types[index] === patternSelected) && (groupSelected === "" || garmets[index] === groupSelected));
+
+    console.log(ids)
+
+
+    const gallery = document.querySelector('.gallery');
+    gallery.innerHTML = '';
+
+
+    for (let i = 0; i < ids.length; i++) {
+
+        const targetItem = patternData.find(item => item.idnum === ids[i]);
+
+        const imagePath = targetItem.image_path;
+        const creator = targetItem.creator;
+        const itemNames = targetItem.itemName;
+
         const link = document.createElement('a');
         link.href = ''; //Uuden sivun linkki
 
@@ -93,17 +109,28 @@ function imagesToPage(images) {
 
         link.appendChild(imageElement);
 
+
         const item = document.createElement('div');
         item.classList.add('item');
         item.appendChild(link);
 
+
+         const h4Element = document.createElement('h4');
+          h4Element.textContent = creator;
+          h4Element.classList.add('gallery-picture-header'); // Add your h4 class here
+          item.appendChild(h4Element);
+
+          const pElement = document.createElement('p');
+          pElement.textContent = itemNames;
+          pElement.classList.add('gallery-picture-description'); // Add your p class here
+          item.appendChild(pElement);
+
         gallery.appendChild(item);
 
-        });
+        };
 }
 
 
-// tekee siirtymän toiselle sivulle
 async function nextPage() {
     const images = await fetchImages();
 }

@@ -1,82 +1,83 @@
 [
   {
-    "image_path": "items_directory/item1.jpg",
-    "description": "A group of friends enjoying a picnic in the park on a sunny day, surrounded by greenery and laughter."
+    "idnum": "1",
+    "image_path": "items_directory/knitting/emmi/dresses/vivi_olivia_dress_n.jpg",
+    "patternType": "knitting",
+    "gender": "female",
+    "garmet": "dress",
+    "creator": "Reetta",
+    "itemName": "Vivi Olivia dress"
   },
   {
-    "image_path": "items_directory/item2.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
+    "idnum": "2",
+    "image_path": "items_directory/knitting/emmi/pants/pamela_pants_n.jpg",
+    "patternType": "knitting",
+    "gender": "female",
+    "garmet": "pants",
+    "creator": "Reetta",
+    "itemName": "Pamela pants"
   },
   {
-    "image_path": "items_directory/item3.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
+    "idnum": "3",
+    "image_path": "items_directory/knitting/emmi/shirts/babette_shirt_n.jpg",
+    "patternType": "knitting",
+    "gender": "female",
+    "garmet": "shirt",
+    "creator": "Reetta",
+    "itemName": "Babette shirt"
   },
-    {
-    "image_path": "items_directory/item4.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
+  {
+    "idnum": "4",
+    "image_path": "items_directory/sewing/moa/shirts/elsi_shirt_n.jpg",
+    "patternType": "sewing",
+    "gender": "female",
+    "garmet": "shirt",
+    "creator": "Moa",
+    "itemName": "Elsi shirt"
   },
-    {
-    "image_path": "items_directory/item5.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
+  {
+    "idnum": "5",
+    "image_path": "items_directory/sewing/nelli/accessories/etu_and_hattu_belt_m.jpg",
+    "patternType": "sewing",
+    "gender": "male",
+    "garmet": "accessories",
+    "creator": "Sally",
+    "itemName": "Etu and Hattu belt"
   },
-    {
-    "image_path": "items_directory/item6.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
+  {
+    "idnum": "6",
+    "image_path": "items_directory/sewing/nelli/pants/paul_pants_m.jpg",
+    "patternType": "sewing",
+    "gender": "male",
+    "garmet": "pants",
+    "creator": "Sally",
+    "itemName": "Paul pants"
   },
-    {
-    "image_path": "items_directory/item7.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
+  {
+    "idnum": "7",
+    "image_path": "items_directory/sewing/nelli/pants/rinja_pants_n.jpg",
+    "patternType": "sewing",
+    "gender": "female",
+    "garmet": "pants",
+    "creator": "Sally",
+    "itemName": "Rinja pants"
   },
-    {
-    "image_path": "items_directory/item8.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
+  {
+    "idnum": "8",
+    "image_path": "items_directory/sewing/nelli/shirts/ben_shirt_m.jpg",
+    "patternType": "sewing",
+    "gender": "male",
+    "garmet": "shirt",
+    "creator": "Sally",
+    "itemName": "Ben shirt"
   },
-    {
-    "image_path": "items_directory/item9.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
-  },
-    {
-    "image_path": "items_directory/item10.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
-  },
-    {
-    "image_path": "items_directory/item11.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
-  },
-    {
-    "image_path": "items_directory/item12.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
-  },
-    {
-    "image_path": "items_directory/item13.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
-  },
-    {
-    "image_path": "items_directory/item14.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
-  },
-    {
-    "image_path": "items_directory/item15.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
-  },
-    {
-    "image_path": "items_directory/item16.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
-  },
-    {
-    "image_path": "items_directory/item17.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
-  },
-    {
-    "image_path": "items_directory/item18.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
-  },
-    {
-    "image_path": "items_directory/item19.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
-  },
-    {
-    "image_path": "items_directory/item20.jpg",
-    "description": "An adorable kitten playing with a yarn ball, showcasing its playful and curious nature."
+  {
+    "idnum": "9",
+    "image_path": "items_directory/sewing/nelli/shirts/tia_shirt_n.jpg",
+    "patternType": "sewing",
+    "gender": "female",
+    "garmet": "shirt",
+    "creator": "Sally",
+    "itemName": "Tia shirt"
   }
 ]
