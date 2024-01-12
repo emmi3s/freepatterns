@@ -1,83 +1,152 @@
 [
   {
     "idnum": "1",
-    "image_path": "items_directory/knitting/emmi/dresses/vivi_olivia_dress_n.jpg",
+    "image_path": "items_directory/knitting/ReettaKnits/shirts/rknits-skåbu.jpg",
     "patternType": "knitting",
     "gender": "female",
-    "garmet": "dress",
-    "creator": "Reetta",
-    "itemName": "Vivi Olivia dress"
+    "garmet": "shirt",
+    "creator": "Reetta Knits",
+    "itemName": "Skåbu"
   },
   {
     "idnum": "2",
-    "image_path": "items_directory/knitting/emmi/pants/pamela_pants_n.jpg",
+    "image_path": "items_directory/knitting/ReettaKnits/shirts/rknits-hjemme.jpg",
     "patternType": "knitting",
     "gender": "female",
-    "garmet": "pants",
-    "creator": "Reetta",
-    "itemName": "Pamela pants"
+    "garmet": "shirt",
+    "creator": "Reetta Knits",
+    "itemName": "Hjemme"
   },
   {
     "idnum": "3",
-    "image_path": "items_directory/knitting/emmi/shirts/babette_shirt_n.jpg",
+    "image_path": "items_directory/knitting/ReettaKnits/shirts/porvoo-rknits.jpeg",
     "patternType": "knitting",
     "gender": "female",
     "garmet": "shirt",
-    "creator": "Reetta",
-    "itemName": "Babette shirt"
+    "creator": "Reetta Knits",
+    "itemName": "Porvoo"
   },
   {
     "idnum": "4",
-    "image_path": "items_directory/sewing/moa/shirts/elsi_shirt_n.jpg",
-    "patternType": "sewing",
+    "image_path": "items_directory/knitting/ReettaKnits/accessories/otta-rknits.jpeg",
+    "patternType": "knitting",
     "gender": "female",
-    "garmet": "shirt",
-    "creator": "Moa",
-    "itemName": "Elsi shirt"
+    "garmet": "accessories",
+    "creator": "Reetta Knits",
+    "itemName": "Otta"
   },
   {
     "idnum": "5",
-    "image_path": "items_directory/sewing/nelli/accessories/etu_and_hattu_belt_m.jpg",
-    "patternType": "sewing",
-    "gender": "male",
+    "image_path": "items_directory/knitting/ReettaKnits/accessories/rknits-huurre.jpg",
+    "patternType": "knitting",
+    "gender": "female",
     "garmet": "accessories",
-    "creator": "Sally",
-    "itemName": "Etu and Hattu belt"
+    "creator": "Reetta Knits",
+    "itemName": "Huurre"
   },
-  {
+    {
     "idnum": "6",
-    "image_path": "items_directory/sewing/nelli/pants/paul_pants_m.jpg",
+    "image_path": "items_directory/sewing/FibreMood/shirts/FrancesTop_FibreMood.jpg",
     "patternType": "sewing",
-    "gender": "male",
-    "garmet": "pants",
-    "creator": "Sally",
-    "itemName": "Paul pants"
+    "gender": "female",
+    "garmet": "shirt",
+    "creator": "Fibre Mood",
+    "itemName": "Frances Top"
   },
+
+
   {
     "idnum": "7",
-    "image_path": "items_directory/sewing/nelli/pants/rinja_pants_n.jpg",
+    "image_path": "items_directory/sewing/InTheFolds/dresses/PleatedSummerDress_InTheFolds.jpg",
+    "patternType": "sewing",
+    "gender": "female",
+    "garmet": "dress",
+    "creator": "In The Folds",
+    "itemName": "Pleated Summer Dress"
+  },
+
+  {
+    "idnum": "8",
+    "image_path": "items_directory/sewing/InTheFolds/pants/WideLegPants_InTheFolds.jpg",
     "patternType": "sewing",
     "gender": "female",
     "garmet": "pants",
-    "creator": "Sally",
-    "itemName": "Rinja pants"
-  },
-  {
-    "idnum": "8",
-    "image_path": "items_directory/sewing/nelli/shirts/ben_shirt_m.jpg",
-    "patternType": "sewing",
-    "gender": "male",
-    "garmet": "shirt",
-    "creator": "Sally",
-    "itemName": "Ben shirt"
+    "creator": "In The Folds",
+    "itemName": "Wide Leg Pants"
   },
   {
     "idnum": "9",
-    "image_path": "items_directory/sewing/nelli/shirts/tia_shirt_n.jpg",
+    "image_path": "items_directory/sewing/InTheFolds/shirts/PeplumTop_InTheFolds.jpg",
     "patternType": "sewing",
     "gender": "female",
     "garmet": "shirt",
-    "creator": "Sally",
-    "itemName": "Tia shirt"
+    "creator": "In The Folds",
+    "itemName": "Peplum Top"
+  },
+  {
+    "idnum": "10",
+    "image_path": "items_directory/sewing/InTheFolds/shirts/RuffleSleeveTop_InTheFolds.jpg",
+    "patternType": "sewing",
+    "gender": "female",
+    "garmet": "shirt",
+    "creator": "In The Folds",
+    "itemName": "Ruffle Sleeve Top"
+  },
+  {
+    "idnum": "11",
+    "image_path": "items_directory/sewing/InTheFolds/shirts/WrapTopPattern_InTheFolds.jpg",
+    "patternType": "sewing",
+    "gender": "female",
+    "garmet": "shirt",
+    "creator": "In The Folds",
+    "itemName": "Wrap Top"
+  },
+  {
+    "idnum": "12",
+    "image_path": "items_directory/sewing/InTheFolds/skirts/BarklySkirt_InTheFolds.jpg",
+    "patternType": "sewing",
+    "gender": "female",
+    "garmet": "skirt",
+    "creator": "In The Folds",
+    "itemName": "Barkly Skirt"
+  },
+
+  {
+    "idnum": "13",
+    "image_path": "items_directory/sewing/InTheFolds/skirts/WrapSkirt_InTheFolds.jpg",
+    "patternType": "sewing",
+    "gender": "female",
+    "garmet": "skirt",
+    "creator": "In The Folds",
+    "itemName": "Wrap Skirt"
+  },
+
+  {
+    "idnum": "14",
+    "image_path": "items_directory/sewing/TheEssentialsClub/dresses/GatheredTeeDress_TheEssentialClub.jpg",
+    "patternType": "sewing",
+    "gender": "female",
+    "garmet": "dress",
+    "creator": "The Essential Club",
+    "itemName": "Gathered Tee Dress"
+  },
+
+    {
+    "idnum": "15",
+    "image_path": "items_directory/sewing/TheEssentialsClub/jackets/OversizedBlazerThriftFlip_TheEssentialClub.jpg",
+    "patternType": "sewing",
+    "gender": "female",
+    "garmet": "jacket",
+    "creator": "The Essential Club",
+    "itemName": "Oversized Blazer Thrift Flip"
+  },
+    {
+    "idnum": "16",
+    "image_path": "items_directory/sewing/TheEssentialsClub/pants/LinenCulottes_TheEssientielsClub.jpg",
+    "patternType": "sewing",
+    "gender": "female",
+    "garmet": "pants",
+    "creator": "The Essential Club",
+    "itemName": "Linen Culottes"
   }
 ]
