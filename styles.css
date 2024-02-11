@@ -3,11 +3,9 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: 'Merriweather', serif;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     text-decoration: none;
     color: black;
-
 }
 
 
@@ -16,6 +14,12 @@ body{
     background-color: #CFDCF2;
 }
 
+#logo-text {
+    font-size: 0.55em;
+    font-family: 'EB Garamond', 'serif';
+    margin-left: 45%;
+    margin-bottom: 4%;
+}
 
 /*sivun rungon määritykset*/
 .site{
@@ -44,15 +48,15 @@ header {
   display: block;
   line-height: 3.5rem;
   text-align: center;
-  font-size: 2em;
-    font-weight: bold;
+  font-size: 1em;
 }
 
 /*sivun nimi ja prosentit millä leveydellä otsikko näkyy*/
 #header-site_name {
+    font-family: 'EB Garamond', serif;
+    margin-left: 50%;
     width: 85%;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 3em;
 }
 
 /*prosentit millä leveydellä contact us linnki näkyy*/
@@ -62,7 +66,7 @@ header {
 
 /*pääsisältö*/
 main {
-    margin-top: 3%;
+    /*margin-top: 3%;*/
      font-size: 2em;
 }
 
@@ -95,6 +99,7 @@ main {
     margin-top: 6%;
     margin-left: 45%;
     margin-bottom: 3%;
+    font-size: 1em;
 }
 
 
@@ -105,15 +110,23 @@ select{
     width: 200px;
     font-size: 1em;
     border-radius: 6px;
+    background-color: #FAF7F0;
 }
 
-.gallery-container-filter{
-    margin-top: 4%;
+#filter-header {
+    font-size: 0.85em;
 }
 
 .gallery-container-filter{
     margin-top: 3%;
+    font-size: 0.70em;
 }
+
+#gallery-container-filter-pattern_type{
+    margin-top: 3%;
+    font-size: 0.70em;
+}
+
 /*filtervalikko*/
 
 
@@ -122,17 +135,18 @@ select{
 /*kuvagalleria*/
 .gallery-container {
     display: flex;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
 }
 
 .filter {
-    width: 20%;
+    width: 15%;
     padding: 20px;
     position: sticky;
 }
 
+
 .gallery {
-    width: 80%;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -144,22 +158,38 @@ select{
     padding: 5px;
     box-sizing: border-box;
     text-align: center;
+    overflow: hidden;
+}
+
+.gallery-picture-header {
+    font-size: 0.5em;
+    margin-top: 0.5%;
+    margin-bottom: 0.6%;
+}
+
+.gallery-picture-description {
+    font-size: 0.5em;
 }
 
 img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.04);
 }
 
 .gallery-item-header-text {
-    font-size: 1.3em;
+    font-size: 1em;
     color: #333;
     margin-top: 2%;
 }
 
 .gallery-item-header {
-    font-size: 1.3em;
+    font-size: 1em;
     margin-bottom: 0;
     font-weight: normal;
 
@@ -168,29 +198,29 @@ img {
 
 
 
-/*sivunumerot*/
-.page-number button {
-    border-radius: 7px;
-    height: 50px;
-    width: 100px;
-    font-size: 1em;
-    margin-left: 0.3%;
-    border: 2px solid black;
-    cursor: pointer;
-}
 
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    display: none;
+    background-color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 
 
 
 /*alavalikko*/
 footer{
     font-size: 2em;
-    margin-top: 1%;
     border-top: 1px solid black;
-    padding-top: 1%;
 }
 
-/* video kansio ompelu, kohta 10:13 */
+
 
 
 

@@ -1,124 +1,126 @@
 [
-  {
-    "idnum": "1",
-    "image_path": "items_directory/knitting/ReettaKnits/shirts/rknits-skåbu.jpg",
-    "patternType": "knitting",
-    "gender": "female",
-    "garmet": "shirt",
-    "creator": "Reetta Knits",
-    "itemName": "Skåbu"
-  },
-  {
-    "idnum": "2",
-    "image_path": "items_directory/knitting/ReettaKnits/shirts/rknits-hjemme.jpg",
-    "patternType": "knitting",
-    "gender": "female",
-    "garmet": "shirt",
-    "creator": "Reetta Knits",
-    "itemName": "Hjemme"
-  },
-  {
-    "idnum": "3",
-    "image_path": "items_directory/knitting/ReettaKnits/shirts/porvoo-rknits.jpeg",
-    "patternType": "knitting",
-    "gender": "female",
-    "garmet": "shirt",
-    "creator": "Reetta Knits",
-    "itemName": "Porvoo"
-  },
-  {
-    "idnum": "4",
-    "image_path": "items_directory/knitting/ReettaKnits/accessories/otta-rknits.jpeg",
-    "patternType": "knitting",
-    "gender": "female",
-    "garmet": "accessories",
-    "creator": "Reetta Knits",
-    "itemName": "Otta"
-  },
-  {
-    "idnum": "5",
-    "image_path": "items_directory/knitting/ReettaKnits/accessories/rknits-huurre.jpg",
-    "patternType": "knitting",
-    "gender": "female",
-    "garmet": "accessories",
-    "creator": "Reetta Knits",
-    "itemName": "Huurre"
-  },
+
     {
-    "idnum": "6",
+    "idnum": "1",
     "image_path": "items_directory/sewing/FibreMood/shirts/FrancesTop_FibreMood.jpg",
     "patternType": "sewing",
     "gender": "female",
     "garmet": "shirt",
-    "creator": "Fibre Mood",
-    "itemName": "Frances Top"
+    "creator": "FIBRE MOOD -",
+    "itemName": "FRANCES TOP"
   },
 
 
   {
-    "idnum": "7",
+    "idnum": "2",
     "image_path": "items_directory/sewing/InTheFolds/dresses/PleatedSummerDress_InTheFolds.jpg",
     "patternType": "sewing",
     "gender": "female",
     "garmet": "dress",
-    "creator": "In The Folds",
-    "itemName": "Pleated Summer Dress"
+    "creator": "IN THE FOLDS -",
+    "itemName": "PLEATED SUMMER DRESS"
   },
 
   {
-    "idnum": "8",
+    "idnum": "3",
     "image_path": "items_directory/sewing/InTheFolds/pants/WideLegPants_InTheFolds.jpg",
     "patternType": "sewing",
     "gender": "female",
     "garmet": "pants",
-    "creator": "In The Folds",
-    "itemName": "Wide Leg Pants"
+    "creator": "IN THE FOLDS -",
+    "itemName": "WIDE LEG PANTS"
   },
   {
-    "idnum": "9",
+    "idnum": "4",
     "image_path": "items_directory/sewing/InTheFolds/shirts/PeplumTop_InTheFolds.jpg",
     "patternType": "sewing",
     "gender": "female",
     "garmet": "shirt",
-    "creator": "In The Folds",
-    "itemName": "Peplum Top"
+    "creator": "IN THE FOLDS -",
+    "itemName": "PEPLUM TOP"
   },
   {
-    "idnum": "10",
+    "idnum": "5",
     "image_path": "items_directory/sewing/InTheFolds/shirts/RuffleSleeveTop_InTheFolds.jpg",
     "patternType": "sewing",
     "gender": "female",
     "garmet": "shirt",
-    "creator": "In The Folds",
-    "itemName": "Ruffle Sleeve Top"
+    "creator": "IN THE FOLDS -",
+    "itemName": "RUFFLE SLEEVE TOP"
   },
   {
-    "idnum": "11",
+    "idnum": "6",
     "image_path": "items_directory/sewing/InTheFolds/shirts/WrapTopPattern_InTheFolds.jpg",
     "patternType": "sewing",
     "gender": "female",
     "garmet": "shirt",
-    "creator": "In The Folds",
-    "itemName": "Wrap Top"
+    "creator": "IN THE FOLDS -",
+    "itemName": "WRAP TOP"
   },
   {
-    "idnum": "12",
+    "idnum": "7",
     "image_path": "items_directory/sewing/InTheFolds/skirts/BarklySkirt_InTheFolds.jpg",
     "patternType": "sewing",
     "gender": "female",
     "garmet": "skirt",
-    "creator": "In The Folds",
-    "itemName": "Barkly Skirt"
+    "creator": "IN THE FOLDS -",
+    "itemName": "BARKLY SKIRT"
   },
 
   {
-    "idnum": "13",
+    "idnum": "8",
     "image_path": "items_directory/sewing/InTheFolds/skirts/WrapSkirt_InTheFolds.jpg",
     "patternType": "sewing",
     "gender": "female",
     "garmet": "skirt",
-    "creator": "In The Folds",
-    "itemName": "Wrap Skirt"
+    "creator": "IN THE FOLDS -",
+    "itemName": "WRAP SKIRT"
+  },
+
+    {
+    "idnum": "9",
+    "image_path": "items_directory/knitting/ReettaKnits/shirts/rknits-skåbu.jpg",
+    "patternType": "knitting",
+    "gender": "female",
+    "garmet": "shirt",
+    "creator": "REETTA KNITS -",
+    "itemName": "SKÅBU"
+  },
+  {
+    "idnum": "10",
+    "image_path": "items_directory/knitting/ReettaKnits/shirts/rknits-hjemme.jpg",
+    "patternType": "knitting",
+    "gender": "female",
+    "garmet": "shirt",
+    "creator": "RETTA KNITS -",
+    "itemName": "HJEMME"
+  },
+  {
+    "idnum": "11",
+    "image_path": "items_directory/knitting/ReettaKnits/shirts/porvoo-rknits.jpeg",
+    "patternType": "knitting",
+    "gender": "female",
+    "garmet": "shirt",
+    "creator": "REETTA KNITS -",
+    "itemName": "PORVOO"
+  },
+  {
+    "idnum": "12",
+    "image_path": "items_directory/knitting/ReettaKnits/accessories/otta-rknits.jpeg",
+    "patternType": "knitting",
+    "gender": "female",
+    "garmet": "accessories",
+    "creator": "REETTA KNITS -",
+    "itemName": "OTTA"
+  },
+  {
+    "idnum": "13",
+    "image_path": "items_directory/knitting/ReettaKnits/accessories/rknits-huurre.jpg",
+    "patternType": "knitting",
+    "gender": "female",
+    "garmet": "accessories",
+    "creator": "REETTA KNITS -",
+    "itemName": "HUURRE"
   },
 
   {
@@ -127,8 +129,8 @@
     "patternType": "sewing",
     "gender": "female",
     "garmet": "dress",
-    "creator": "The Essential Club",
-    "itemName": "Gathered Tee Dress"
+    "creator": "THE ESSENTIAL CLUB -",
+    "itemName": "GATHERED TEE DRESS"
   },
 
     {
@@ -137,8 +139,8 @@
     "patternType": "sewing",
     "gender": "female",
     "garmet": "jacket",
-    "creator": "The Essential Club",
-    "itemName": "Oversized Blazer Thrift Flip"
+    "creator": "THE ESSENTIAL CLUB -",
+    "itemName": "OVERSIZED BLAZER THRIFT FLIP"
   },
     {
     "idnum": "16",
@@ -146,7 +148,7 @@
     "patternType": "sewing",
     "gender": "female",
     "garmet": "pants",
-    "creator": "The Essential Club",
-    "itemName": "Linen Culottes"
+    "creator": "THE ESSENTIAL CLUB -",
+    "itemName": "LINEN CULOTTES"
   }
 ]
